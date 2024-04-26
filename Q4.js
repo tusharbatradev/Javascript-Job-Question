@@ -1,7 +1,7 @@
-// Find a prime number
+// Check a number if it is a prime number
 
 function PrimeNumber(num) {
-    if (num >= 1) {
+    if (num%num === 1) {
         console.log(`${num} is a Prime Number`)
     } else if (num === 0) {
         console.log(`${num} is not a Prime nor a Composite Number`)
@@ -11,4 +11,4 @@ function PrimeNumber(num) {
     }
 }
 
-PrimeNumber(0)
+PrimeNumber(12)
