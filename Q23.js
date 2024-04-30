@@ -1,12 +1,28 @@
 // Write a C program to read any day number in integer and display the day name in word format.
 // Test Data :
 // 4
-
-let days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
-
 let dayNumber = 7;
 
-for(let i = dayNumber-1 ; i <= days.length ; i++){
-    console.log(days[i])
-    break
+switch (dayNumber) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday");
+    break;
 }
