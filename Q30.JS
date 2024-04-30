@@ -1,0 +1,7 @@
+// Convert temperature from Celsius to Fahrenheit.
+
+let temperatureCelsius = 25;
+
+let temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
+
+console.log(temperatureFahrenheit)

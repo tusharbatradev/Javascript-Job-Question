@@ -10,6 +10,8 @@ if(x>0 && y>0){
     console.log(`The coordinate point (${x},${y}) lies in the Second quadrant. `)
 } else if(x<0 && y<0){
     console.log(`The coordinate point (${x},${y}) lies in the Third quadrant. `)
-} else{
+} else if(x>0 && y<0){
     console.log(`The coordinate point (${x},${y}) lies in the Fourth quadrant. `)
+} else{
+    console.log(`It's center point`)
 }
