@@ -1,34 +1,14 @@
 // Find fibonacci series from given number
 
-testdata = 5
-fibonacci = [0,1,1,2,3]
+let n = 10;
 
-// fib
+let fibonacci = [0,1];
 
-function fib(n){
-    let result="";
-    let first=0,second=1;
-    
-    if(n===1){
-        result=first;
-    }
-    else if(n===2){
-        result = first + "," + second
-    }
- else{
-    result = first + "," + second
-    for(let i=1;i<=n-2;i++){
-        let temp=second;
-        second=first+second;
-        first=temp;
-        
-        result= result + "," + second
-    }
+for(let i = 2 ; i<=n ; i++){
+    fibonacci[i] = fibonacci[i-1] + fibonacci[i-2]
 }
-return result;
-    
-}
-console.log(fib(5))
+
+console.log(fibonacci)
 
 
 
