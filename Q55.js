@@ -6,21 +6,22 @@ function quickSort(arr) {
   }
 
   let pivot = arr[0];
+
   let smallerArr = [];
   let largerArr = [];
 
   for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > pivot) {
+    if (arr[i] < pivot) {
       smallerArr.push(arr[i]);
     } else {
       largerArr.push(arr[i]);
     }
   }
 
-  let sortedSmallerArr = quickSort(smallerArr);
-  let sortedLargerArr = quickSort(largerArr);
+  let sortedSmaller = quickSort(smallerArr);
+  let sortedLarger = quickSort(largerArr);
 
-  return [...sortedLargerArr, pivot, ...sortedSmallerArr];
+  return [...sortedSmaller, pivot, ...sortedLarger];
 }
 
-console.log(quickSort([5, 2, 6, 89, 12,101]));
+console.log(quickSort([5, 2, 6, 89, 12, 101]));

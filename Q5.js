@@ -1,10 +1,11 @@
 // Check Numbers are equal or not
 
-let number1 = 15;
-let number2 = 15;
-
-if(number1 === number2){
-    console.log(`${number1} and ${number2} are equal`)
-} else {
-    console.log(`${number1} and ${number2} are not equal`)
+function Equal(n1,n2){
+    if(n1 === n2){
+        console.log(`${n1} and ${n2} are equal numbers`)
+    } else{
+        console.log(`${n1} and ${n2} are not equal numbers`)
+    }
 }
+
+Equal(3,3)

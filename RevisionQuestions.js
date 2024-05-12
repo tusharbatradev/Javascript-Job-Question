@@ -91,4 +91,44 @@ let string = 'Radar'
 
 Palindrome(string)
 
-// 
+// Divisor of a number
+function Divisor(num){
+    let Divisor = [];
+
+    for(let i=1 ; i<=num ; i++){
+        if(num%i === 0){
+            Divisor.push(i)
+        }
+    }
+
+    console.log(Divisor)
+}
+
+Divisor(10)
+
+// Armstrong
+// 371 = 3cube + 7cube + 7cube = ArmstrongNumber
+
+function Armstrong(n){
+    let str = n.toString();
+    let sum = 0;
+
+    for(let i=0 ; i<str.length ; i++){
+        let num = parseInt(str[i]);
+        sum = sum + num * num * num
+    }
+    if(sum === n){
+        console.log('ArmStrong')
+    } else{
+        console.log('Not a ArmStrong')
+    }
+}
+
+Armstrong(371)
+
+
+
+
+
+
+

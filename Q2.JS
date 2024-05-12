@@ -1,12 +1,11 @@
 // CHECK IF A NUMBER IS EVEN OR ODD
 
-function EvenorOdd(num){
-    if(num%2 === 0){
-        console.log(`${num} is an Even Number`)
+function EvenOrOdd(n){
+    if(n%2===0){
+        console.log("It's an even number")
     } else{
-        console.log(`${num} is an Odd Number`)
+        console.log("It's an odd number")
     }
 }
 
-let number = 10;
-EvenorOdd(number)
+EvenOrOdd(2)

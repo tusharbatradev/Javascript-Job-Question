@@ -1,11 +1,8 @@
 // Find the sum of two number:-
 // num1 = 5, num2 = 7
 
-let number1 = 5;
-let number2 = 7;
-
-function Sum(num1, num2){
-    console.log(num1+num2)
+function Sum(n1,n2){
+    console.log(n1+n2)
 }
 
-Sum(number1,number2)
+Sum(5,7)
