@@ -7,19 +7,19 @@
 // Temp >=40 then Its Very Hot
 
 function temperatureReader(temp) {
-  if (temp >= 40) {
-    console.log("Very Hot Weather");
-  } else if (temp >= 30 && temp < 40) {
-    console.log("Hot Weather");
-  } else if (temp >= 20 && temp < 30) {
-    console.log("Normal Weather");
-  } else if (temp >= 10 && temp < 20) {
-    console.log("Cold Weather");
-  } else if (temp >= 0 && temp < 10) {
-    console.log("Very Cold Weather");
+  if (temp < 0) {
+    console.log(`Freezing Weather`);
+  } else if (temp >= 0 && temp <= 10) {
+    console.log(`Very Cold Weather`);
+  } else if (temp >= 11 && temp <= 20) {
+    console.log(`Cold Weather`);
+  } else if (temp >= 21 && temp <= 30) {
+    console.log(`Normal Weather`);
+  } else if (temp >= 31 && temp <= 40) {
+    console.log(`Hot Weather`);
   } else {
-    console.log("Freezing Weather");
+    console.log(`Very Hot Weather`);
   }
 }
 
-temperatureReader(42);
+temperatureReader(43);

@@ -6,8 +6,12 @@ let side1 = 40;
 let side2 = 55;
 let side3 = 65;
 
-if (side1 + side2 < side3 || side2 + side3 < side1 || side1 + side3 < side2) {
-  console.log("The Triangle is valid");
-} else {
-  console.log("The Triangle is not valid");
+function TriangleValidity(side1, side2, side3) {
+  if (side1 + side2 > side3 || side2 + side3 > side1 || side1 + side3 > side2) {
+    console.log("The Triangle is valid");
+  } else {
+    console.log("The Triangle is not valid");
+  }
 }
+
+TriangleValidity(side1, side2, side3);

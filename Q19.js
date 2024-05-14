@@ -2,16 +2,20 @@
 // Test Data :
 // k
 
-let alphabet = 'a'
+let alphabet = "e";
 
-if(
-    alphabet === 'a' || 
-    alphabet === 'e' || 
-    alphabet === 'i' ||
-    alphabet === 'o' ||
-    alphabet === 'u'  
-){
-    console.log(`The alphabet '${alphabet}' is a vowel`)
-} else{
-    console.log(`The alphabet '${alphabet}' is a consonant`)
+function VowelTester(alphabet) {
+  if (
+    alphabet === "a" ||
+    alphabet === "e" ||
+    alphabet === "i" ||
+    alphabet === "o" ||
+    alphabet === "u"
+  ) {
+    console.log(`The alphabet '${alphabet}' is a vowel`);
+  } else {
+    console.log(`The alphabet '${alphabet}' is a consonant`);
+  }
 }
+
+VowelTester(alphabet)

@@ -6,17 +6,19 @@
 
 let character = "%";
 
-let askiiValue = character.charCodeAt(0);
+function CharacterFormat(character) {
+  let asciiValue = character.charCodeAt(0);
 
-if (
-  (askiiValue >= 65 && askiiValue <= 90) ||
-  (askiiValue >= 97 && askiiValue <= 122)
-) {
-  console.log(`The ${character} Character is an alphabet`);
-} else if (askiiValue >= 48 && askiiValue <= 57) {
-  console.log(`The ${character} Character is a digit`);
-} else {
-  console.log(`The ${character} Character is Special Character`);
+  if (
+    (asciiValue >= 65 && asciiValue <= 90) ||
+    (asciiValue >= 97 && asciiValue <= 122)
+  ) {
+    console.log(`${character} is an alphabet`);
+  } else if (asciiValue >= 48 && asciiValue <= 57) {
+    console.log(`${character} is a number`);
+  } else {
+    console.log(`${character} is a Special Character`);
+  }
 }
 
-console.log(askiiValue);
+CharacterFormat("^");

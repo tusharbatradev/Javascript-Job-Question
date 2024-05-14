@@ -3,13 +3,13 @@
 // 500 700
 
 function ProfitLossCounter(costPrice, sellingPrice){
-    let ProfitorLoss = sellingPrice - costPrice;
+    let ProOrLoss = sellingPrice - costPrice;
 
-    if(ProfitorLoss > 0){
-        console.log(`You can booked your profit amount : ${ProfitorLoss}`)
+    if(ProOrLoss > 0){
+        console.log(`You can booked your profit amount : ${ProOrLoss}`)
     } else{
-        console.log(`You can booked your loss amount : ${ProfitorLoss}`)
+        console.log(`You can booked your loss amount : ${ProOrLoss}`)
     }
 }
 
-ProfitLossCounter(500,700)
+ProfitLossCounter(700,900)

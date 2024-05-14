@@ -4,14 +4,18 @@
 let x=7;
 let y=9;
 
-if(x>0 && y>0){
-    console.log(`The coordinate point (${x},${y}) lies in the First quadrant. `)
-} else if(x<0 && y>0){
-    console.log(`The coordinate point (${x},${y}) lies in the Second quadrant. `)
-} else if(x<0 && y<0){
-    console.log(`The coordinate point (${x},${y}) lies in the Third quadrant. `)
-} else if(x>0 && y<0){
-    console.log(`The coordinate point (${x},${y}) lies in the Fourth quadrant. `)
-} else{
-    console.log(`It's center point`)
+function Quadrant(x,y){
+    if(x===0 && y===0){
+        console.log(`Central Point`)
+    } else if(x>0 && y>0){
+        console.log(`First Quadrant`)
+    } else if(x<0 && y>0){
+        console.log(`Second Quadrant`)
+    } else if(x<0 && y<0){
+        console.log(`Third Quadrant`)
+    } else if(x>0 && y<0){
+        console.log(`Fourth Quadrant`)
+    }
 }
+
+Quadrant(x,y)

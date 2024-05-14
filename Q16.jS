@@ -2,14 +2,18 @@
 // Test Data :
 // 50 50 60
 
-let side1 = 502;
-let side2 = 20;
-let side3 = 510;
+let side1 = 50;
+let side2 = 50;
+let side3 = 60;
 
-if(side1 === side2 && side2 === side3){
-    console.log('Triangle is Equilateral Triangle')
-} else if(side1 != side2 && side2 != side3){
-    console.log('Traingle is Scalene Triangle')
-} else{
-    console.log('Traingle is Isosceles Triangle')
+function TriangleFormat(side1,side2,side3){
+    if(side1!=side2 && side1!=side3 && side2!=side3){
+        console.log(`It's a scalene Triangle`)
+    } else if(side1===side2 && side2===side3){
+        console.log(`It's a Equilateral Triangle`)
+    } else{
+        console.log(`It's a Isosceles Triangle`)
+    }
 }
+
+TriangleFormat(side1,side2,side3)
