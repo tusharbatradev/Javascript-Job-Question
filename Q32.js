@@ -1,18 +1,18 @@
 // Find the minimum and maximum values in an array.
 
-let array = [4, 8, 2, 10, 6]
+function MinAndMax(arr) {
+  let minValue = arr[0];
+  let maxValue = arr[0];
 
-let minNumber = array[0];
-let maxNumber = array[0];
-
-for(let i = 1 ; i<=array.length ; i++){
-    if(array[i] >= maxNumber){
-        maxNumber = array[i]
-    } else if(array[i] <= minNumber){
-        minNumber = array[i]
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i] > minValue) {
+      minValue = arr[i];
+    } else if (arr[i] < minValue) {
+      minValue = arr[i];
     }
+  }
+
+  console.log(minValue, maxValue);
 }
 
-console.log(
-    `Min Number is ${minNumber} and Max Number is ${maxNumber}`
-    )
+MinAndMax([2, 8, 9, 5, 6, 87]);

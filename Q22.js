@@ -7,17 +7,22 @@
 // A	Average
 // F	Fail
 
+let grade = "G";
 
-let grade = 'A'
-
-if(grade === 'E'){
-    console.log("Excellent")
-} else if(grade === 'V'){
-    console.log("Very Good")
-} else if(grade === 'G'){
-    console.log("Good")
-} else if(grade === 'A'){
-    console.log("Average")
-} else if(grade === 'F'){
-    console.log("Fail")
+switch (grade) {
+  case "A":
+    console.log("Average");
+    break;
+  case "F":
+    console.log("Fail");
+    break;
+  case "G":
+    console.log("Good");
+    break;
+  case "V":
+    console.log("Very Good");
+    break;
+  case "E":
+    console.log("Excellent");
+    break;
 }

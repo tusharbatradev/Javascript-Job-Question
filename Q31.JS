@@ -1,7 +1,9 @@
 // Sort an array in ascending order.
 
-let array = [3, 7, 2, 8, 5];
+function SortArray(arr){
+    let ascendingArray = arr.sort((a, b) => a - b);
 
-let ascendingArray = array.sort()
+    console.log(ascendingArray)
+}
 
-console.log(ascendingArray)
+SortArray([9,1,12,6,48,57])

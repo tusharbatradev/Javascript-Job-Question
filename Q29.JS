@@ -1,12 +1,15 @@
 // Find the largest element in an array.
 
-let array = [3, 7, 2, 8, 5];
-let largestNumber = array[0];
+function LargestElement(arr){
+    let largestElement = arr[0];
 
-for(let i = 1 ; i<=array.length ; i++){
-    if(array[i] > largestNumber){
-        largestNumber = array[i]
+    for(let i=1 ; i<=arr.length ; i++){
+        if(arr[i]>largestElement){
+            largestElement = arr[i]
+        }
     }
+
+    console.log(largestElement)
 }
 
-console.log(largestNumber)
+LargestElement([1,2,5,8,3,10,4,40,80,8])

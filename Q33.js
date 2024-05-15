@@ -1,7 +1,11 @@
 // Search for a target element in a sorted/unsorted array using linear search
 
-let array = [1, 3, 5, 7, 9], target = 5;
+function LinearSearch(arr, target) {
+    for(let i=0 ; i<=arr.length ; i++){
+        if(arr[i] === target){
+            console.log(`The index of ${target} is ${i}`)
+        }
+    }
+}
 
-let indexOfTarget = array.indexOf(target)
-
-console.log(indexOfTarget)
+LinearSearch([1,24,31,2,34,32,11],24);

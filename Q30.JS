@@ -2,6 +2,9 @@
 
 let temperatureCelsius = 25;
 
-let temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
+function TemperatureCalculator(temperatureCelsius){
+    let temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
+    console.log(temperatureFahrenheit)
+}
 
-console.log(temperatureFahrenheit)
+TemperatureCalculator(25)

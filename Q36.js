@@ -1,15 +1,15 @@
 // Remove Duplicate from an array
 
-let array = [1, 2, 2, 3, 4, 4, 5];
+function Duplicates(arr) {
+  let uniqueArray = [];
 
-let uniqueArray = [];
-
-// arr[i] = 2 === arr[i - 1];
-
-for (let i = 0; i < array.length; i++) {
-  if (array[i] != array[i - 1]) {
-    uniqueArray.push(array[i]);
+  for (let i = 0; i < arr.length; i++) {
+    if (!uniqueArray.includes(arr[i])) {
+      uniqueArray.push(arr[i]);
+    }
   }
+
+  console.log(uniqueArray);
 }
 
-console.log(uniqueArray);
+Duplicates([1, 1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 8]);
