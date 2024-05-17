@@ -1,15 +1,15 @@
 // Find Missing Number: Write a function that takes an array of numbers from 1 to n with one number missing, and returns the missing number.
 
-let array = [1,2,4,5,6,7,8,9];
+function MissingNum(arr) {
+  let missingNumber;
 
-let missingNumber = 0;
-
-for (let i = 0; i < array.length; i++) {
-    if (array[i + 1] - array[i] !== 1) {
-        missingNumber = array[i] + 1;
-        break; 
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] - arr[i - 1] != 1) {
+      missingNumber = arr[i] - 1;
     }
+  }
+
+  console.log(missingNumber);
 }
 
-console.log(missingNumber)
-
+MissingNum([1, 2, 3, 4, 5, 6, 8]);
