@@ -1,14 +1,17 @@
 // Average from array
 
-let array = [1, 2, 3, 4, 5, 6, 7, 8];
+function Average(arr){
+  let sum = 0;
 
-let sum = 0;
+  let average = 0;
 
-let average = 0;
+  for(let i=0 ; i<arr.length ; i++){
+    sum = sum + arr[i];
+  }
 
-for (let i = 0; i < array.length; i++) {
-  sum = sum + array[i];
-  average = sum / array.length;
+  average = sum/arr.length;
+
+  console.log(average)
 }
 
-console.log(`Average is ${average} from the array`);
+Average([1,2,3,4,5,6,7,8,9,10])

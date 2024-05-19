@@ -1,27 +1,27 @@
 // Sorting with quicksort algorithm
 
-function quickSort(arr) {
+function quickSort(arr){
+
   if (arr.length <= 1) {
     return arr;
   }
 
-  let pivot = arr[0];
+  let pivotElement = arr[0]
+  let smallerArray = [];
+  let largerArray = [];
 
-  let smallerArr = [];
-  let largerArr = [];
-
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] < pivot) {
-      smallerArr.push(arr[i]);
-    } else {
-      largerArr.push(arr[i]);
+  for(let i=1 ; i<arr.length ; i++){
+    if(pivotElement>arr[i]){
+      smallerArray.push(arr[i])
+    } else{
+      largerArray.push(arr[i])
     }
   }
 
-  let sortedSmaller = quickSort(smallerArr);
-  let sortedLarger = quickSort(largerArr);
+  let sortedSmaller = quickSort(smallerArray)
+  let sortedLarger = quickSort(largerArray)
 
-  return [...sortedSmaller, pivot, ...sortedLarger];
+  return [...sortedSmaller, pivotElement, ...sortedLarger];
 }
 
-console.log(quickSort([5, 2, 6, 89, 12, 101]));
+console.log(quickSort([4,9,5,6,2,1,7,3,8,10]))

@@ -1,20 +1,20 @@
 function mergeAlternately(word1, word2) {
-    let mergedArr = [];
-  
-    let word1Arr = word1.split("");
-    let word2Arr = word2.split("");
-  
-    for (let i = 0; i <= word1Arr.length; i++) {
-      if (word1Arr[i]) {
-        mergedArr.push(word1Arr[i]);
-      }
-      if (word2Arr[i]) {
-        mergedArr.push(word2Arr[i]);
-      }
+  let mergeArray = [];
+
+  let word1Array = word1.split("");
+  let word2Array = word2.split("");
+
+  for (let i = 0; i <= word1Array.length; i++) {
+    if (word1Array[i]) {
+      mergeArray.push(word1Array[i]);
     }
-  
-    let mergedStr = mergedArr.join('')
-    console.log(mergedStr);
+    if (word2Array[i]) {
+      mergeArray.push(word2Array[i]);
+    }
   }
-  
-  mergeAlternately("abc", "pqr");
+
+  let mergedString = mergeArray.join('')
+  console.log(mergedString)
+}
+
+mergeAlternately("abc", "pqr");
