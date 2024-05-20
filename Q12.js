@@ -1,21 +1,18 @@
 // Write a C program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies.
 // Test Data : 7 9
 
-let x=7;
-let y=9;
-
-function Quadrant(x,y){
+function QuadrantFinder(x,y){
     if(x===0 && y===0){
         console.log(`Central Point`)
     } else if(x>0 && y>0){
-        console.log(`First Quadrant`)
+        console.log(`${x} and ${y} lies in first quadrant`)
     } else if(x<0 && y>0){
-        console.log(`Second Quadrant`)
+        console.log(`${x} and ${y} lies in second quadrant`)
     } else if(x<0 && y<0){
-        console.log(`Third Quadrant`)
-    } else if(x>0 && y<0){
-        console.log(`Fourth Quadrant`)
+        console.log(`${x} and ${y} lies in third quadrant`)
+    } else {
+        console.log(`${x} and ${y} lies in fourth quadrant`)
     }
 }
 
-Quadrant(x,y)
+QuadrantFinder(7,9)

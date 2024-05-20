@@ -2,9 +2,9 @@
 
 function VotingEligibility(age){
    if(age>=18){
-      console.log('Cadidate can vote')
+      console.log(`Candidate is eligible to vote`)
    } else{
-      console.log('Candidate cannot vote')
+      console.log(`Candidate is not eligible to vote`)
    }
 }
 

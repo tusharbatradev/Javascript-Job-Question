@@ -4,9 +4,7 @@
 // Expected Output :
 // This is a special character.
 
-let character = "%";
-
-function CharacterFormat(character) {
+function CharacterForm(character) {
   let asciiValue = character.charCodeAt(0);
 
   if (
@@ -21,4 +19,4 @@ function CharacterFormat(character) {
   }
 }
 
-CharacterFormat("^");
+CharacterForm("^");

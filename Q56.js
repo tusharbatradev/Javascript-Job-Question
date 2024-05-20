@@ -1,3 +1,5 @@
+// Merge 2 Strings Alternately
+
 function mergeAlternately(word1, word2) {
   let mergeArray = [];
 

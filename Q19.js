@@ -2,8 +2,6 @@
 // Test Data :
 // k
 
-let alphabet = "e";
-
 function VowelTester(alphabet) {
   if (
     alphabet === "a" ||
@@ -12,10 +10,10 @@ function VowelTester(alphabet) {
     alphabet === "o" ||
     alphabet === "u"
   ) {
-    console.log(`The alphabet '${alphabet}' is a vowel`);
+    console.log(`${alphabet} is a vowel`);
   } else {
-    console.log(`The alphabet '${alphabet}' is a consonant`);
+    console.log(`${alphabet} is not a vowel`);
   }
 }
 
-VowelTester(alphabet)
+VowelTester('l')

@@ -1,4 +1,5 @@
 // Write a C program to read the roll no, name and marks of three subjects and calculate the total, percentage and division.
+
 // Input the Roll Number of the student :784
 // Input the Name of the Student :James
 // Input the marks of Physics, Chemistry and Computer Application : 70 80 90
@@ -12,34 +13,40 @@
 // Percentage = 80.00
 // Division = First
 
-function Promotion(rollNo, Name, physics, chemistry, computerApplication) {
-  // Finding Total Marks
-  let totalMarks = physics + chemistry + computerApplication;
+function StudentDetails(
+  rollNo,
+  Name,
+  physicsMarks,
+  chemistryMarks,
+  computerApplication
+) {
 
-  // Finding Percantage
-  let percentage = physics + chemistry + computerApplication / 3;
+  let totalMarks = physicsMarks + chemistryMarks + computerApplication;
 
-  // Finding Division
-  let division = "";
+  let percentage = totalMarks/3 ;
 
-  if (percentage >= 60) {
-    division = "First";
-  } else if (percentage >= 50 && percentage <= 60) {
-    division = "Second";
-  } else {
-    division = "Third";
+  let division;
+
+  if(percentage>=60){
+    division = 'first'
+  } else if(percentage>=50 && percentage<60){
+    division = 'second'
+  } else if(percentage>=40 && percentage<50){
+    division = 'third'
+  } else{
+    division = 'fourth'
   }
 
   console.log(`
-    Roll No. = ${rollNo},
-    Name = ${Name},
-    Marks in Physics = ${physics},
-    Marks in Chemistry = ${chemistry},
-    Marks in Computer = ${computerApplication},
-    Total Marks = ${totalMarks},
-    Percantage = ${percentage},
-    Division ${division}
+    Roll No : ${rollNo}
+    Name of Student : ${Name}
+    Marks in Physics : ${physicsMarks}
+    Marks in Chemistry : ${chemistryMarks}
+    Marks in Computer Application : ${computerApplication}
+    Total Marks = ${totalMarks}
+    Percentage = ${percentage}
+    Division = ${division}
     `);
 }
 
-Promotion("784", "James", 70, 80, 90);
+StudentDetails(784, "James", 70, 80, 90);

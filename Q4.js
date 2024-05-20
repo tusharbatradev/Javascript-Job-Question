@@ -1,19 +1,19 @@
 // Check a number if it is a prime number
 
-function PrimeNumber(n) {
-  let divideCounter = 0;
+function PrimeNumberDetector(num) {
+  let divisibleCounter = 0;
 
-  for (let i = 1; i <= n; i++) {
-    if (n % i === 0) {
-      divideCounter = divideCounter + 1;
+  for (let i = 0; i <= num; i++) {
+    if (num % i === 0) {
+      divisibleCounter += 1;
     }
   }
 
-  if (divideCounter === 2) {
-    console.log(`${n} is a Prime Number`);
+  if (divisibleCounter === 2) {
+    console.log(`${num} is a Prime Number`);
   } else {
-    console.log(`${n} is not a Prime Number`);
+    console.log(`${num} is a Composite Number`);
   }
 }
 
-PrimeNumber(11);
+PrimeNumberDetector(11);

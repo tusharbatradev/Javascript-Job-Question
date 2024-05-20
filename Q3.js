@@ -1,13 +1,15 @@
 //  Factorial of a number
+// Factorial of 4 = 4*3*2*1
+// = 24
 
-function Factorial(n){
-  let factorial = 1;
+function Factorial(num) {
+  let factoial = 1;
 
-  for(let i=1 ; i<=n ; i++){
-    factorial = factorial * i
+  for (let i = 1; i <= num; i++) {
+    factoial = factoial * i;
   }
 
-  console.log(factorial)
+  console.log(factoial);
 }
 
-Factorial(4)
+Factorial(4);

@@ -5,14 +5,15 @@
 // if m>0 than n=1;
 // if m<0 than n=-1
 
-function Identifier(m) {
+function Identifier(m){
   let n = 0;
-  if (m > 0) {
-    n = 1;
-  } else if (m < 0) {
-    n = -1;
+  if(m>0){
+    n=1
+  } else if(m<0){
+    n=-1
   }
-  console.log(`Value of m is ${m} and n is ${n}`)
+  
+  console.log(`Value of m is ${m} and value of n is ${n}`)
 }
 
 Identifier(0)

@@ -2,14 +2,16 @@
 // Test Data :
 // 500 700
 
-function ProfitLossCounter(costPrice, sellingPrice){
-    let ProOrLoss = sellingPrice - costPrice;
+function ProfitOrLoss(costPrice , sellingPrice){
+    let status = sellingPrice - costPrice;
 
-    if(ProOrLoss > 0){
-        console.log(`You can booked your profit amount : ${ProOrLoss}`)
+    if(status>0){
+        console.log(`Profit of ${status}`)
+    } else if(status===0){
+        console.log(`No Profit No Loss`)
     } else{
-        console.log(`You can booked your loss amount : ${ProOrLoss}`)
+        console.log(`Loss of ${status}`)
     }
 }
 
-ProfitLossCounter(700,900)
+ProfitOrLoss(500,700)

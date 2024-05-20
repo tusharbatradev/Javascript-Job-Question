@@ -1,11 +1,11 @@
 // Write a C program to check whether a given number is positive or negative.
 
-function PositiveOrNegative(n){
-    if(n>0){
-        console.log(`${n} is a Positive Number`)
+function PositiveOrNegative(num){
+    if(num>0){
+        console.log(`${num} is a Positive Number`)
     } else{
-        console.log(`${n} is a Negative Number`)
+        console.log(`${num} is a Negative Number`)
     }
 }
 
-PositiveOrNegative(10)
+PositiveOrNegative(2)
