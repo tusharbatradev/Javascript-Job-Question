@@ -1,10 +1,9 @@
 // Convert temperature from Celsius to Fahrenheit.
 
-let temperatureCelsius = 25;
+function CelsiusToFehrenheit(tempInCel){
+    let temperatureInFehrenheit = (tempInCel * 9/5) + 32;
 
-function TemperatureCalculator(temperatureCelsius){
-    let temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
-    console.log(temperatureFahrenheit)
+    console.log(`${temperatureInFehrenheit} Fehrenheit`)
 }
 
-TemperatureCalculator(25)
+CelsiusToFehrenheit(20)

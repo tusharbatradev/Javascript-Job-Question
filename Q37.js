@@ -1,20 +1,20 @@
 // Check if two given strings are anagrams of each other.
 
-function AnagramChecker(string1, string2) {
-  let array1 = string1.split("");
-  let array2 = string2.split("");
+// silent , listen 
 
-  let sortedArray1 = array1.sort();
-  let sortedArray2 = array2.sort();
+function AnagagramCheck(string1, string2){
+  let array1 = string1.split('').sort();
+  let array2 = string2.split('').sort();
 
-  let sortedString1 = sortedArray1.join("");
-  let sortedString2 = sortedArray2.join("");
+  let sortedString1 = array1.join('');
+  let sortedString2 = array2.join('');
 
-  if (sortedString1 === sortedString2) {
-    console.log("Anagram");
+  if(sortedString1 === sortedString2){
+    console.log(`'${string1}' and '${string2}' are anagram of each other.`)
   } else {
-    console.log("Not anagram");
+    console.log(`'${string1}' and '${string2}' are not anagram of each other.`)
   }
+
 }
 
-AnagramChecker("silent", "listen");
+AnagagramCheck('listen','silenat')

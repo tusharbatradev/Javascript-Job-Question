@@ -10,19 +10,19 @@
 let grade = "G";
 
 switch (grade) {
-  case "A":
-    console.log("Average");
+  case 'F':
+    console.log('Fail');
     break;
-  case "F":
-    console.log("Fail");
+  case 'A':
+    console.log('Average');
     break;
-  case "G":
-    console.log("Good");
+  case 'G':
+    console.log('Good');
     break;
-  case "V":
-    console.log("Very Good");
+  case 'V':
+    console.log('Very Good');
     break;
-  case "E":
-    console.log("Excellent");
+  case 'E':
+    console.log('Excellent');
     break;
 }

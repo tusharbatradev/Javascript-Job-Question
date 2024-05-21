@@ -1,11 +1,13 @@
 // Reverse a string.
 
-let string = 'Hello'
+function Reverse(string){
+    let array = string.split('');
 
-let array = string.split('')
+    let reversedArray = array.reverse();
 
-let reverseArray = array.reverse()
+    let reversedString = reversedArray.join('')
 
-let reverseString = reverseArray.join('')
+    console.log(reversedString)
+}
 
-console.log(reverseString)
+Reverse('Tushar')

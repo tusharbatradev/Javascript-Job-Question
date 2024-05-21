@@ -7,10 +7,10 @@ function Palindrome(string) {
 
   let reversedString = reversedArray.join("");
 
-  if (reversedString === string) {
-    console.log(`${string} is a palindrome string`);
+  if (string === reversedString) {
+    console.log(`'${string}' is a Palindrome`);
   } else {
-    console.log(`${string} is not a palindrome string`);
+    console.log(`${string} is not a Palindrome`);
   }
 }
 

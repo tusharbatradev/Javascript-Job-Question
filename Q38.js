@@ -14,4 +14,4 @@ function Median(array) {
   }
 }
 
-Median([1, 2, 3, 4, 5, 6, 7, 8]);
+Median([7, 8, 4, 3, 5, 6, 2, 1]);

@@ -3,7 +3,7 @@
 function AreaOfCircle(radius){
     let area = 3.14159265359 * (radius * radius);
 
-    console.log(area)
+    console.log(`The area of circle is ${area}`)
 }
 
-AreaOfCircle(8)
+AreaOfCircle(12)

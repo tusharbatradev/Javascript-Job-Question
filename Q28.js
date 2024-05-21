@@ -1,16 +1,16 @@
 // Find fibonacci series from given number
 
-function Fibonacci(n){
-    let fibonacci = [0,1]
+function Fibonacci(num){
+    let fibSeries = [0,1];
 
-    for(let i=2 ; i<=n ; i++){
-        fibonacci[i] = fibonacci[i-1] + fibonacci[i-2]
+    for(let i=2; i<num ; i++){
+        fibSeries[i] = fibSeries[i-1] + fibSeries[i-1]
     }
 
-    console.log(fibonacci)
+    console.log(fibSeries)
 }
 
-Fibonacci(10)
+Fibonacci(8)
 
 
 

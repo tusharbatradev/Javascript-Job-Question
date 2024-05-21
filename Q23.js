@@ -1,7 +1,8 @@
 // Write a C program to read any day number in integer and display the day name in word format.
 // Test Data :
 // 4
-let dayNumber = 7;
+
+let dayNumber = 4;
 
 switch (dayNumber) {
   case 1:
