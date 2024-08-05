@@ -12,4 +12,4 @@ function Intersection(array1, array2){
     console.log(intersection)
 }
 
-Intersection([1,2,3,4] , [3,4,5,6])
+Intersection([1,2,3,4,4] , [3,4,5,6])

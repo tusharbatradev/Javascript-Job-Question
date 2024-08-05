@@ -1,6 +1,6 @@
 // Nested Arrays: Write a function that takes an array of arrays as input and flattens it into a single array using a for loop.
 
-function SingleArray(array) {
+function FlattenArray(array){
 	let flattenArray = [];
 
 	for(let i=0 ; i<array.length ; i++){
@@ -12,4 +12,4 @@ function SingleArray(array) {
 	console.log(flattenArray)
 }
 
-SingleArray([[1,2,3],[4,5,6],[7,8,9]])
+FlattenArray([[1,2,3],[4,5,6],[7,8,9]])

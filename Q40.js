@@ -1,16 +1,16 @@
 // Check if a string is a palindrome.
 
 function Palindrome(string) {
-  let array = string.split("");
+  let stringArray = string.split("");
 
-  let reversedArray = array.reverse();
+  let reverseArray = stringArray.reverse();
 
-  let reversedString = reversedArray.join("");
+  let reverseString = reverseArray.join("");
 
-  if (string === reversedString) {
-    console.log(`'${string}' is a Palindrome`);
+  if (string === reverseString) {
+    console.log("Palindrome");
   } else {
-    console.log(`${string} is not a Palindrome`);
+    console.log("not a Palindrome");
   }
 }
 

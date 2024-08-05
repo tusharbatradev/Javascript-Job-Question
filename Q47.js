@@ -6,8 +6,6 @@ let chunkSize = 2;
 
 let chunkArr = [];
 
-let chunklength = array.length / 2;
-
 for (let i = 0; i < array.length; i++) {
   if (chunkArr.length !== chunkSize) {
     chunkArr.push(array[i]);
