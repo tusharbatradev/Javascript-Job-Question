@@ -3,7 +3,7 @@
 function Duplicate(array){
   let newArray = [];
 
-  for(let i=0 ; i<array.length ; i++){
+  for(let i=0 ; i< array.length ; i++){
     if(!newArray.includes(array[i])){
       newArray.push(array[i])
     }
@@ -12,4 +12,4 @@ function Duplicate(array){
   console.log(newArray)
 }
 
-Duplicate([1,1,2,3,4,4,5,6,7,8,8])
+Duplicate([12,1,12,3,4,12,22,213,66])
